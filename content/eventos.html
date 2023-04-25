@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reserva</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Main Navbar -->
+        <nav class="uk-container uk-navbar">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a href="#">sistema de<strong>Reserva</strong></a>
+                    </li> 
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@s">
+                    <li class="uk-active"><a href="#">Eventos</a></li>          
+                    <li><a href="#">Laboratórios</a></li>
+                    <li><a href="#" uk-icon="icon: sign-out"></a></li>
+                </ul>
+                <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav">
+                <li class="uk-active"><a href="#">Eventos</a></li>          
+                <li><a href="#">Laboratórios</a></li>
+                <li><a href="#" uk-icon="icon: sign-out"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Formulário de Eventos-->
+    <div class="uk-container">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="uk-margin" uk-grid>
+                        <div class="uk-width-1-2@s">
+                            <label>Nome</label>
+                            <input class="uk-input" type="text">
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <label>Email</label>
+                            <input class="uk-input" type="email">
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <label>Contato</label>
+                            <input class="uk-input" type="text">
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            <label class="uk-form-label">Local</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="form-stacked-select">
+                                    <option>Anfiteatro</option>
+                                    <option>Sala Web 01</option>
+                                    <option>Sala Web 02</option>
+                                    <option>Salão Nobre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            <label>Tipo de Evento</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="form-stacked-select">
+                                    <option>Curso de Extensão</option>
+                                    <option>Palestras</option>
+                                    <option>Reuniões Institucionais</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-margin" uk-grid>
+                        <div class="uk-width-1-4@s">
+                            <label>Nome</label>
+                            <input class="uk-input" type="text" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <label>Email</label>
+                            <input class="uk-input" type="email">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-inline">
+                            <a href="#modal-center" uk-toggle>Esqueceu a senha?</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Acessar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
