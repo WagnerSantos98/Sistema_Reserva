@@ -1,7 +1,15 @@
 $( function() {
-	$( "#datepicker" ).datepicker({
-		dateFormat: "dd/mm/yy"
-		,	duration: "fast"
+	$( "#datepicker-from" ).datepicker({
+		dateFormat: "dd/mm/yy",
+		duration: "fast"
+	});
+} );
+
+$( function() {
+	$( "#datepicker-to" ).datepicker({
+		dateFormat: "dd/mm/yy",
+		locale: 'pt-br',
+		duration: "fast"
 	});
 } );
 
