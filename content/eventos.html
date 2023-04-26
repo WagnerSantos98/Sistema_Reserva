@@ -120,14 +120,44 @@
                         <div class="uk-margin" id="radio">
                             <label>Haverá transmissão?</label>
                             <div class="uk-form-controls"> 
-                                <label><input class="uk-radio" id="sim" type="radio" name="radio1"> Sim</label>
-                                <label><input class="uk-radio" id="nao" type="radio" name="radio1"> Não</label>
+                                <label><input class="uk-radio" onclick="mostrarTransmissao('ocultoEquipamentos')" id="sim" type="radio" name="radio1"> Sim</label>
+                                <label><input class="uk-radio" onclick="ocultarTransmissao('ocultoEquipamentos')" id="nao" type="radio" name="radio1"> Não</label>
                             </div>
                         </div>
-                        <div class="uk-width-1-4@s" id="oculto">
-                            <label>Equipamentostos</label>
-                            
+                        <div class="uk-width-1-4@s" id="ocultoEquipamentos">
+                            <label>Equipamentostos:</label>
+                            <div class="uk-grid-small uk-child-width-auto uk-grid">
+                                <label><input class="uk-checkbox" type="checkbox"> WebCam</label>
+                                <label><input class="uk-checkbox" type="checkbox"> Notebook</label>
+                                <label><input class="uk-checkbox" type="checkbox"> Jabra</label>
+                            </div>
                         </div>     
+                    </div>
+                    <div class="uk-margin" uk-grid>
+                        <div class="uk-margin">
+                            <label>Irá se repetir?</label>
+                            <div class="uk-form-controls"> 
+                                <label><input class="uk-radio" onclick="mostrarTransmissao('ocultoEquipamentos')" id="sim" type="radio" name="radio1"> Sim</label>
+                                <label><input class="uk-radio" onclick="ocultarTransmissao('ocultoEquipamentos')" id="nao" type="radio" name="radio1"> Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-margin" uk-grid id="ocultoRepeticao">
+                        <div class="uk-width-1-4@s">
+                            <label>Dia da Semana</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="form-stacked-select">
+                                    <option>Curso de Extensão </option>
+                                    <option>Palestras</option>
+                                    <option>Reuniões Institucionais</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <label>Hora</label>
+                            <input class="uk-input" type="text" id="timepicker-from" autocomplete="off">
+                        </div>
+                        
                     </div>
                     <div class="uk-margin">
                         <div class="uk-inline">

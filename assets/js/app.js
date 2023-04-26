@@ -18,8 +18,6 @@ $( function() {
 	});
 } );
 
-
-
 /*Input de hora*/
 $('#timepicker-from').timepicker({
 	timeFormat: 'HH:mm',
@@ -39,3 +37,27 @@ $('#timepicker-from').timepicker({
 	showMinute: false,
 	stepHour: 2
   });
+
+
+  function mostrarTransmissao(id){
+	if(document.getElementById){
+		var el = document.getElementById(id);
+		el.style.display = (el.style.display == 'none') ? 'block' : 'block';
+	}
+  }
+
+  function ocultarTransmissao(id){
+	if(document.getElementById){
+		var el = document.getElementById(id);
+		el.style.display = (el.style.display == 'block') ? 'none' : 'none';
+	}
+  }
+
+
+ 
+
+  window.onload = function(){
+	mostrarTransmissao('ocultoEquipamentos');
+	ocultarTransmissao('ocultoEquipamentos');
+  }
+
