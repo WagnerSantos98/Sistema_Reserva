@@ -1,3 +1,36 @@
+
+:root{
+	--color-input: #5C9C30;
+	--color-select: #5c9c30;
+}
+
+.uk-input{
+	border: 1px solid var(--color-input);
+	border-radius: 5px;
+	height: 35px;
+}
+
+.uk-select{
+	border: 1px solid var(--color-select);
+	border-radius: 5px;
+	height: 35px;
+}
+
+label{
+	float: left;
+}
+
+div#radio{
+	position: relative;
+	margin-left: 38px;
+	top: -25px;
+}
+
+#nao{
+	position: relative;
+	margin-left: 10px;
+}
+
 #ui-datepicker-div {
 	display: none;
 	background-color: #fff;

@@ -19,23 +19,23 @@ $( function() {
 } );
 
 
+
+/*Input de hora*/
 $('#timepicker-from').timepicker({
-	timeFormat: 'h:mm p',
-	interval: 60,
-	minTime: '08:00',
-	maxTime: '10:00',
-	startTime: '8:00',
+	timeFormat: 'HH:mm',
+	minTime: '07:00',
+	maxTime: '22:00',
+	startTime: '07:00',
 	showMinute: false,
 	stepHour: 2
   });
 
 
   $('#timepicker-to').timepicker({
-	timeFormat: 'h:mm p',
-	interval: 60,
-	minTime: '08:00',
-	maxTime: '10:00',
-	startTime: '8:00',
+	timeFormat: 'HH:mm',
+	minTime: '07:00',
+	maxTime: '22:00',
+	startTime: '07:00',
 	showMinute: false,
 	stepHour: 2
   });
