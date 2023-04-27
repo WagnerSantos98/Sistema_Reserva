@@ -38,7 +38,7 @@ $('#timepicker-from').timepicker({
 	stepHour: 2
   });
 
-
+//Função para exibir e ocultar condicional
   function mostrarTransmissao(id){
 	if(document.getElementById){
 		var el = document.getElementById(id);
