@@ -53,9 +53,6 @@ $('#timepicker-from').timepicker({
 	}
   }
 
-
- 
-
   window.onload = function(){
 	mostrarTransmissao('ocultoEquipamentos');
 	ocultarTransmissao('ocultoEquipamentos');
