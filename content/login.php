@@ -1,3 +1,11 @@
+<?php
+include_once('../db/conexao.php');
+include_once('../db/acesso.php');
+
+session_start();
+error_reporting(0);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,7 +23,7 @@
 </head>
 <body>
     <!--Login-->
-    <form>
+    <form action="" method="POST">
         <div class="uk-container">
             <div class="uk-child-width-expand@s uk-text-center" uk-grid>
                 <div>
