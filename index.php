@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -29,7 +33,7 @@
                     <li><a href="content/eventos.html">Eventos</a></li>          
                     <li><a href="content/laboratorios.html">Laboratórios</a></li>
                     <li><a href="content/relatorios.html">Relatórios</a></li>
-                    <li><a href="#" uk-icon="icon: sign-out"></a></li>
+                    <li><a href="./db/logout.php" uk-icon="icon: sign-out"></a></li>
                 </ul>
                 <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
             </div>
@@ -42,7 +46,7 @@
                 <li><a href="#">Eventos</a></li>          
                 <li><a href="#">Laboratórios</a></li>
                 <li><a href="#">Relatórios</a></li>
-                <li><a href="#" uk-icon="icon: sign-out"></a></li>
+                <li><a href="./db/logout.php" uk-icon="icon: sign-out"></a></li>
             </ul>
         </div>
     </div>

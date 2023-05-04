@@ -2,7 +2,7 @@
 
     $servidor = "localhost";
     $usuario = "root";
-    $senha = "197328640Ti@";
+    $senha = "";
     $dbname = "db_reserva";
 
     $con = mysqli_connect($servidor,$usuario,$senha,$dbname);

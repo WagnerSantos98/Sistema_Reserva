@@ -1,9 +1,22 @@
 <?php
 include_once('../db/conexao.php');
-include_once('../db/acesso.php');
 
 session_start();
 error_reporting(0);
+
+if (isset($_POST['bt_acessar'])) {
+	$email_user = $_POST['email_user'];
+	$senha_user = sha1($_POST['senha_user']);
+
+	$sql = "SELECT * FROM tb_usuario WHERE email_user='$email_user' AND senha_user='$senha_user'";
+	$result = mysqli_query($con, $sql);
+	if ($result->num_rows > 0) {
+		$row = mysqli_fetch_assoc($result);
+		header("Location: ../index.php");
+	} else {
+		echo "<script>alert('Ooops! E-mail ou senha incorretos. ')</script>";
+	}
+}
 ?>
 
 <!DOCTYPE html>
@@ -31,13 +44,13 @@ error_reporting(0);
                         <div class="uk-margin">
                             <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                <input name="email_user" class="uk-input" type="email" placeholder="Email">
+                                <input name="email_user" class="uk-input" type="email" placeholder="Email"   value="<?php echo $email_user; ?>">
                             </div>
                         </div>
                         <div class="uk-margin">
                             <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                                <input name="senha_user" class="uk-input" type="password" placeholder="Senha">
+                                <input name="senha_user" class="uk-input" type="password" placeholder="Senha"  value="<?php echo $_POST['senha_user']; ?>">
                             </div>
                         </div>
                         <div class="uk-margin">
@@ -46,7 +59,7 @@ error_reporting(0);
                             </div>
                         </div>
                         <div>
-                            <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Acessar</button>
+                            <button name="bt_acessar" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Acessar</button>
                         </div>
                     </div>
                 </div>
