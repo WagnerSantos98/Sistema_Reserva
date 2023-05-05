@@ -19,7 +19,7 @@ session_start();
 </head>
 <body>
     <header>
-        <!-- Main Navbar -->
+        <!--Navbar -->
         <nav class="uk-container uk-navbar">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
