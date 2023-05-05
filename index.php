@@ -19,12 +19,12 @@ session_start();
 </head>
 <body>
     <header>
-        <!--Navbar -->
+        <!--Navbar Teste-->
         <nav class="uk-container uk-navbar">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <li class="uk-active">
-                        <a href="#">sistema de<strong>Reserva</strong></a>
+                        <a href="#">sistema de<strong>Reserva🖥</strong></a>
                     </li> 
                 </ul>
             </div>
