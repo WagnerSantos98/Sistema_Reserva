@@ -5,3 +5,5 @@ Esse projeto tem por base como treinamento e além disso projeto profissional co
 aulas, equipamentos.
 
 Esse sistema está sendo elaborado se utilizando das linguagens de programação: PHP no back-end e utilizando da framwork: UIKit.
+
+O calendário está se utilizando de uma api chamada FullCalendar v-6.1.6
